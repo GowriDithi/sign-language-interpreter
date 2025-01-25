@@ -1,20 +1,23 @@
-# [Project Name] 🎯
+# Sign Language Interpretation(ISL) 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Innovista
 
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: Ammu N Raj - College of Engineering,Trivandrum
+- Member 2: Angel Roy -  College of Engineering,Trivandrum
+- Member 3: Gowri Lal - College of Engineering,Trivandrum
 
 ### Hosted Project Link
 [mention your project hosted project link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+Input: Video feed or images of hand gestures.
+Output: Text or speech translation of the detected gestures.
+Target Audience: Deaf/hard-of-hearing individuals, educators, or the general public.
+Sign Language Type: ISL(Indian Sign Language)
 
 ### The Problem statement
 [What ridiculous problem are you solving?]
