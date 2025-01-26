@@ -1,0 +1,31 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.video-container {
+    margin: 20px 0;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#sign-name {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+#result {
+    margin-top: 20px;
+} 
