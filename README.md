@@ -142,6 +142,7 @@ Schematic Diagram:
                         |   Display (Monitor/Screen)  |
                         +-----------------------------+
 
+
 The Camera Module captures video frames. The frames are sent to the Processing Unit, where they are processed (grayscale, blur, thresholding). The processed frame is compared to stored sign templates in the Sign Matching Algorithm. The matched sign (if found) or feedback is sent to the User Interface, which displays it on the Monitor/Screen.
 
 # Build Photos
