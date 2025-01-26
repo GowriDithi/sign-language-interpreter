@@ -79,6 +79,7 @@ For Hardware:
 
 # Schematic & Circuit
 Circuit Diagram:
+
     +--------------------+
     |  Camera (Input)    |
     +--------------------+
@@ -109,6 +110,7 @@ User Interface: Displays the recognized sign name and score on the screen, provi
 User Input (Capture): Allows the user to capture training data by pressing keys, store new signs, and control the program
 
 Schematic Diagram:
+
 +------------------------+
 |                        |
 |  +------------------+   |    +---------------------------+
