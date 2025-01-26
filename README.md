@@ -61,14 +61,14 @@ python sign_language_interpreter.py
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+<img width="930" alt="recognition_2" src="https://github.com/user-attachments/assets/7a2909d8-daf1-468f-98e7-b80a17c6eb0c" />
+Recognized hand sign 2
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+<img width="908" alt="Capture_L" src="https://github.com/user-attachments/assets/4075c423-b2f0-43f7-a883-c0e07df78717" />
+Captured hand sign L.
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+<img width="865" alt="recognition_L" src="https://github.com/user-attachments/assets/f997737c-90c7-4299-b7cb-702109127815" />
+Recognized hand sign L.
 
 # Diagrams
 ![image](https://github.com/user-attachments/assets/dfba306f-85a8-46b4-9352-a82a41d3c23e)
