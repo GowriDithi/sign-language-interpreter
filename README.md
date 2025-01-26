@@ -111,36 +111,56 @@ User Input (Capture): Allows the user to capture training data by pressing keys,
 
 Schematic Diagram:
 
-+------------------------+
-|                        |
-|  +------------------+   |    +---------------------------+
-|  |   Camera Module  |---|--->|       Processing Unit      |
-|  |  (Capture Input) |   |    | (PC or Microcontroller)   |
-|  +------------------+   |    +---------------------------+
-|                        |            |     |    |  
-+------------------------+            |     |    V
-                                      |  +----------------------+
-                                      |  | Frame Processing     |
-                                      |  | (Grayscale, Blurring,|
-                                      |  | Thresholding)        |
-                                      |  +----------------------+
-                                      |
-                                      V
-                           +----------------------------+
-                           |  Sign Matching Algorithm   |
-                           |  (Template Matching)       |
-                           +----------------------------+
-                                      |
-                                      V
-                         +----------------------------+
-                         | User Interface (Output)    |
-                         | (Display Result, Feedback) |
-                         +----------------------------+
-                                      |
-                                      V
-                        +-----------------------------+
-                        |   Display (Monitor/Screen)  |
-                        +-----------------------------+
+                +-----------------------------------+
+                |        Computer System            |
+                |   (Processing Unit & Display)     |
+                +-----------------------------------+
+                           |  
+                           | (1) Initialization, Display UI, Store Sign Data
+                           V
+         +-----------------------------------------+
+         |             User Interface             |  <--- (User Input: Add Sign, Start Recognition)
+         |   - Displays sign name                 |         |
+         |   - Shows recognition results          |         |
+         |   - Shows captured frames              |         |
+         +-----------------------------------------+         |
+                           |                                 |
+                           V                                 |
+         +-----------------------------------------+           |
+         |              Camera (Input)            |           |
+         |  - Captures real-time video frames     |           |
+         +-----------------------------------------+           |
+                           | (2) Capture Frames, Process Frames |
+                           V                                 |
+         +-----------------------------------------+           |
+         |         Frame Processing Unit          |           |
+         |  - Convert to grayscale                |           |
+         |  - Apply Gaussian blur and histogram   |           |
+         |  - Thresholding and hand segmentation  |           |
+         +-----------------------------------------+           |
+                           |                                 |
+                           V                                 |
+         +-----------------------------------------+           |
+         |            Sign Template Matching      |           |
+         |  - Compare frames to stored templates  |           |
+         |  - Calculate score (difference measure)|           |
+         +-----------------------------------------+           |
+                           |                                 |
+                           V                                 |
+         +-----------------------------------------+           |
+         |            Sign Data Storage           |           |
+         |  - Store new sign templates            |           |
+         |  - Load existing sign templates        |           |
+         +-----------------------------------------+           |
+                           |                                 |
+                           V                                 |
+                +-----------------------------------+         |
+                |    Recognized Sign Name Display  | <--------+
+                |  (Shows Recognized Sign to User) |
+                +-----------------------------------+
+
+
+
 
 
 The Camera Module captures video frames. The frames are sent to the Processing Unit, where they are processed (grayscale, blur, thresholding). The processed frame is compared to stored sign templates in the Sign Matching Algorithm. The matched sign (if found) or feedback is sent to the User Interface, which displays it on the Monitor/Screen.
